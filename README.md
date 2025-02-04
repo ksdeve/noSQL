@@ -42,4 +42,33 @@ Voici les étapes de base pour exécuter chacun des projets localement.
 
 ```bash
 git clone https://github.com/ksdeve/noSQL.git
-cd noSQL
+cd redis
+```
+
+## Utilisation du Code Python
+- Script Python redis_example.py
+Le fichier redis_example.py contient des exemples de commandes Redis en Python. Vous y trouverez des opérations comme la création, la lecture et la suppression de clés.
+
+Exemple de code :
+
+```python
+import redis
+
+# Connexion à Redis
+r = redis.Redis(host='localhost', port=6379, db=0)
+
+# Créer une clé et une valeur
+r.set('user:1:name', 'John Doe')
+
+# Lire la valeur d'une clé
+user_name = r.get('user:1:name').decode('utf-8')
+print(user_name)  # Affiche : John Doe
+```
+
+2. Exemple de commande Redis
+Voici quelques commandes Redis de base que vous pouvez exécuter dans la CLI de Redis :
+
+```
+SET user:1:name "John Doe"
+GET user:1:name
+```
