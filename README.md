@@ -58,8 +58,8 @@ pip install redis
 Clonez ce dépôt sur votre machine locale pour accéder au code Python et à d'autres fichiers associés :
 
 ```
-git clone https://github.com/ton-utilisateur/redis-example.git
-cd redis-example
+git clone https://github.com/ksdeve/noSQL.git
+cd redis
 ```
 
 ## Utilisation du Code Python
