@@ -82,10 +82,17 @@ user_name = r.get('user:1:name').decode('utf-8')
 print(user_name)  # Affiche : John Doe
 ```
 
+
 2. Exemple de commande Redis
 Voici quelques commandes Redis de base que vous pouvez exécuter dans la CLI de Redis :
 
 ```
 SET user:1:name "John Doe"
 GET user:1:name
+```
+
+3. Lancer le docker :
+
+```
+docker run -d -p 6379:6379 redis
 ```
