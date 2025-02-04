@@ -16,3 +16,5 @@ values = r.mget(keys)
 values = [value.decode('utf-8') for value in values]
 
 
+print(f"Name: {user_name.decode('utf-8')}, Email: {user_email.decode('utf-8')}")
+print("Values from mget:", values)
