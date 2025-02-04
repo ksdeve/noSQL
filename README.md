@@ -42,5 +42,4 @@ Voici les étapes de base pour exécuter chacun des projets localement.
 
 ```bash
 git clone https://github.com/ksdeve/noSQL.git
-cd redis
 ```
