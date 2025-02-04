@@ -18,11 +18,11 @@ Ce projet montre comment configurer et utiliser **MongoDB** avec Python en utili
 - **Technologies utilisées** : MongoDB, Python, Docker
 - [Consulter le README spécifique à MongoDB](mongodb/README.md)
 
-<!-- ### 3. [Neo4j avec Docker et Python](neo4j/README.md)
+### 3. [Neo4j avec Docker et Python](neo4j/README.md)
 Ce projet montre comment configurer et utiliser **Neo4j**, une base de données orientée graphes, avec Python en utilisant Docker.
 
 - **Technologies utilisées** : Neo4j, Python, Docker
-- [Consulter le README spécifique à Neo4j](neo4j/README.md) -->
+- [Consulter le README spécifique à Neo4j](neo4j/README.md)
 
 ---
 
