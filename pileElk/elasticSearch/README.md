@@ -124,3 +124,78 @@ sudo docker-compose up -d
 ```
 Cela va démarrer les trois nœuds dans un cluster Elasticsearch.
 
+## Modélisation des données dans Elasticsearch
+
+1. Créer un Index avec des Paramètres
+Nous allons créer un index appelé cities, avec des paramètres spécifiques pour définir 2 fragments (shards) et 
+
+2. répliques (replicas) pour chaque fragment.
+
+Exécutez la commande suivante pour créer l'index cities :
+
+```
+sudo curl -XPUT 'http://localhost:9200/cities' -H 'Content-Type: application/json' -d '
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 2
+  }
+}'
+```
+- number_of_shards : Spécifie le nombre de fragments pour l'index. Chaque fragment est une portion des données distribuées sur différents nœuds.
+- number_of_replicas : Définit le nombre de répliques (copies) pour chaque fragment pour assurer la tolérance aux pannes.
+
+
+3. Vérifier les Paramètres de l'Index
+Pour vérifier les paramètres de l'index cities que nous venons de créer, exécutez la commande suivante :
+
+```
+sudo curl -XGET 'http://localhost:9200/cities/_settings' | jq
+```
+Cette commande récupère les paramètres de l'index et utilise jq pour formater la sortie JSON de manière lisible.
+
+4. Insérer un Document dans l'Index
+Nous allons maintenant insérer un document dans l'index cities. Ce document contiendra des informations sur une ville (London) et son pays (England).
+
+Exécutez la commande suivante pour ajouter le document :
+
+```
+sudo curl -XPOST 'http://localhost:9200/cities/_doc' -H 'Content-Type: application/json' -d '
+{
+  "city": "London",
+  "country": "England"
+}'
+```
+Cette commande insère un document avec deux champs : city et country.
+
+
+5. Vérifier le Document Inséré
+6. 
+Une fois le document inséré, vous pouvez le vérifier en utilisant son identifiant unique (_id). Remplacez {1Xxx1ZQBeurP9PmK1nYl} par l'ID réel du document retourné lors de l'insertion.
+
+Exécutez la commande suivante pour vérifier le contenu du document inséré :
+```
+sudo curl -XGET 'http://localhost:9200/cities/_doc/{1Xxx1ZQBeurP9PmK1nYl}'
+```
+Cette commande permet de récupérer le document à l'aide de son identifiant unique et affiche son contenu JSON.
+
+### Exemple de Réponse
+Après l'insertion et la récupération du document, vous devriez obtenir une réponse similaire à celle-ci :
+
+```json
+{
+  "_index": "cities",
+  "_type": "_doc",
+  "_id": "1Xxx1ZQBeurP9PmK1nYl",
+  "_version": 1,
+  "_seq_no": 1,
+  "_primary_term": 1,
+  "found": true,
+  "_source": {
+    "city": "London",
+    "country": "England"
+  }
+}
+```
+_source : Ce champ contient les données du document, ici "city": "London" et "country": "England".
+found: true : Indique que le document a bien été trouvé dans l'index.
