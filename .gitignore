@@ -1,0 +1,8 @@
+# Kibana specific
+/pileElk/kibana/elas1/nodes/*/indices/
+/pileElk/kibana/elas1/nodes/*/translog/
+/pileElk/kibana/elas1/nodes/*/_state/
+
+# Fichiers temporaires ou générés
+/pileElk/kibana/elas1/nodes/*/.tmp
+/pileElk/kibana/elas1/nodes/*/write.lock
