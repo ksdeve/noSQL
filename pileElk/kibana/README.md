@@ -67,10 +67,18 @@ Explication du fichier docker-compose.yml :
 2. Kibana : Ce service utilise l'image Docker officielle de Kibana (version 7.11.1). Le conteneur est nommé kibana et redémarre toujours en cas de panne. Il expose le port 5601 pour permettre l'accès à l'interface graphique de Kibana. Kibana dépend du service Elasticsearch et ne démarrera que lorsque ce dernier sera prêt.
 
 ## Démarrage de l'application
+
 Pour démarrer l'application, exécutez les commandes suivantes :
 ```
-docker-compose up -d // -d (mode détaché)
+docker-compose up -d
+// -d (mode détaché)
 ```
+
+En cas d'erreur, vérifier bien que le dossier ``elas1`` à les droits, sinon éxecuter cette commande :
+```
+sudo chmod 777 elas1
+```
+
 Cela démarrera les services Elasticsearch et Kibana en arrière-plan. Après quelques secondes, vous pourrez accéder à Kibana via votre navigateur à l'adresse suivante :
 
 http://localhost:5601/app/dev_tools#/console
