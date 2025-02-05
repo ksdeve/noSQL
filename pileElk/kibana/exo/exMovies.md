@@ -124,3 +124,33 @@ GET movies/_search
 
 
 ## 6. Récupérer tous les films réalisés par « James Cameron » avec un rang inférieur à 400. (Réponse exacte : 2)
+
+
+```json
+GET movies/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "fields.director": "James Cameron"
+          }
+        }
+      ],
+      "filter": [
+        {
+          "range": {
+            "fields.rank": {
+              "lt": 400
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+## 7. Récupérez tous les films réalisés par « Quentin Tarantino » avec une note supérieure à 5, mais non classés comme action ou drame.
+
