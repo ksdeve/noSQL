@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Eliana Green",
+        "email": "eliana.green@yahoo.com",
+        "address": {
+            "city": "Chicago",
+            "street": "789 Oak St"
+        },
+        "balance": 45000
+    },
+    {
+        "name": "Liam Johnson",
+        "email": "liam.johnson@gmail.com",
+        "address": {
+            "city": "Houston",
+            "street": "321 Pine St"
+        },
+        "balance": 27500
+    },
+    {
+        "name": "Maya Patel",
+        "email": "maya.patel@outlook.com",
+        "address": {
+            "city": "San Francisco",
+            "street": "987 Maple Ave"
+        },
+        "balance": 63000
+    },
+    {
+        "name": "Noah Kim",
+        "email": "noah.kim@hotmail.com",
+        "address": {
+            "city": "Seattle",
+            "street": "654 Cedar St"
+        },
+        "balance": 18200
+    },
+    {
+        "name": "Isabella Rivera",
+        "email": "isabella.rivera@icloud.com",
+        "address": {
+            "city": "Miami",
+            "street": "741 Palm Dr"
+        },
+        "balance": 52000
+    },
+    {
+        "name": "Ethan Nguyen",
+        "email": "ethan.nguyen@live.com",
+        "address": {
+            "city": "Austin",
+            "street": "963 Walnut St"
+        },
+        "balance": 34000
+    },
+    {
+        "name": "Chloe Thompson",
+        "email": "chloe.thompson@gmail.com",
+        "address": {
+            "city": "Boston",
+            "street": "159 Birch Rd"
+        },
+        "balance": 29000
+    },
+    {
+        "name": "James Wright",
+        "email": "james.wright@aol.com",
+        "address": {
+            "city": "Denver",
+            "street": "753 Spruce Ln"
+        },
+        "balance": 46000
+    },
+    {
+        "name": "Amelia Martinez",
+        "email": "amelia.martinez@yahoo.com",
+        "address": {
+            "city": "Phoenix",
+            "street": "456 Aspen Way"
+        },
+        "balance": 37000
+    },
+    {
+        "name": "Oliver Davis",
+        "email": "oliver.davis@gmail.com",
+        "address": {
+            "city": "Las Vegas",
+            "street": "258 Cypress Dr"
+        },
+        "balance": 58000
+    }
+]
