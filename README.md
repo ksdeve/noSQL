@@ -1,4 +1,4 @@
-# Mon Repo de Projets Docker et Python
+# Projets Docker et Python
 
 Ce dépôt contient des exemples d'utilisation de plusieurs technologies populaires (Redis, MongoDB, Neo4j) avec Docker et Python. Chaque projet est bien distinct mais ils partagent un but commun : montrer comment utiliser ces bases de données avec Python en environnement Docker.
 
