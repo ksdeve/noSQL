@@ -73,11 +73,11 @@ DELETE my-index/_doc/1
 
 ## Voici une liste de mots-clés fréquemment utilisés :
 
-- match : Recherche une correspondance partielle.
+- match (textuel) : Recherche une correspondance partielle.
 
 - term : Recherche une correspondance exacte.
 
-- range : Recherche des documents dans une plage de valeurs.
+- range (numérique) : Recherche des documents dans une plage de valeurs. (plage)
 
 - exists : Vérifie si un champ existe.
 
