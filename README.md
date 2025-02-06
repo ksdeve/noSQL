@@ -43,3 +43,29 @@ Voici les étapes de base pour exécuter chacun des projets localement.
 ```bash
 git clone https://github.com/ksdeve/noSQL.git
 ```
+
+
+## Comandes Utiles :
+
+1. Arrêter tous les conteneurs :
+```
+sudo docker stop $(sudo docker ps -aq)
+```
+
+2. Supprimer tous les conteneurs :
+```
+docker rm $(docker ps -aq)
+```
+
+
+Docker compose :
+```
+sudo docker compose up
+sudo docker compose-up
+```
+
+
+Rentrer dans le conteneur :
+```
+docker run -it ---- /bin/bash
+```
