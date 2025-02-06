@@ -54,7 +54,7 @@ sudo docker stop $(sudo docker ps -aq)
 
 2. Supprimer tous les conteneurs :
 ```
-docker rm $(docker ps -aq)
+sudo docker rm $(sudo docker ps -aq)
 ```
 
 
