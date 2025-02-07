@@ -28,6 +28,3 @@ sudo docker exec -it {id_container} bin/elasticsearch-plugin install analysis-ic
 - query.py : Contient des fonctions de recherche et d'extraction d'informations des résultats des requêtes.
 - index_operations.py : Gère la création et la vérification des indices.
 
-## Test
-
-![Test1](pileElk/apiPython/Capture d'écran 2025-02-07 141130.png)
