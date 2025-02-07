@@ -27,3 +27,7 @@ sudo docker exec -it {id_container} bin/elasticsearch-plugin install analysis-ic
 - insert_documents.py : Contient les fonctions pour insérer des documents dans les indices.
 - query.py : Contient des fonctions de recherche et d'extraction d'informations des résultats des requêtes.
 - index_operations.py : Gère la création et la vérification des indices.
+
+## Test
+
+![Test1](Capture%20d'ecran%202025-02-07%20141130.png)
